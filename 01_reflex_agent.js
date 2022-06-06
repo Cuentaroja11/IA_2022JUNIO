@@ -21,7 +21,7 @@ function test(states){
        else if (action_result == "RIGT") states[0] = "B";
        else if (action_result == "LEFT") states[0] = "A";
        
-       if (!(location == "A" && states[1] == "CLEAN" && states[2] == "CLEAN")){
+       if (!( (states[0] == "A") && (states[1] == "CLEAN") && (states[2] == "CLEAN") )){
         setTimeout(function(){ test(states); }, 1000);
        }
  
