@@ -23,7 +23,7 @@ function test(states){
     else if (action_result == "RIGT") states[0] = "B";
     else if (action_result == "LEFT") states[0] = "A";
     
-    if (vuelta < 2){
+    if (vuelta < 3){
         if (!( (states[1] == "CLEAN") && (states[2] == "CLEAN") )){
             setTimeout(function(){ test(states); }, 1000);
         }
